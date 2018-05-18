@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=width-device, initial-scale=1" />
   <link rel="stylesheet" href="css/estilo.css" />
-  <link rel="stylesheet" href="css/material/material.min.css">
-
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/material/material.min.css" />
+  <link rel="stylesheet" href="css/conteudo.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <title>Obrigado!</title>
 </head>
 
@@ -41,7 +41,6 @@
     </div>
     <main class="mdl-layout__content">
       <div class="page-content">
-
         <!-- conteudo da pagina com conexao dos elementos do topo com menu mat -->
         <hgroup>
           <picture>
@@ -74,19 +73,27 @@
         <!-- Fim elementos do topo -->
         <!-- Inicio conteudo do corpo versao mobile -->
         <section>
-          <h1>Boletim Mensal</h1>
-          <h2>Fazendo sua assinatura você receberá mensalmente informações sobre nossos produtos, serviços, eventos e descontos.</h2>
+            <main class="mdl-layout__content">
+        <!-- quadro obrigado -->
+            <span class="mdl-layout-title"><h1>Boletim Mensal</h1></span>
+            <div class="mdl-layout-spacer">
+            <h2>Fazendo sua assinatura você receberá mensalmente informações sobre nossos produtos, serviços, eventos e descontos.</h2></div>
+            <img id="pet-surpresa-movel" src="multimidia/pet-surpresa.png" alt="pet-diz-obrigado" max-width="50%" height="auto"/>
+            <br>
+            <p id="obrigado-movel">Nossa equipe irá conferir sua solicitação e enviará uma confirmação para o email informado</p>
+        </main>
           <form>
-            <label name="boletin_mensal" value="nome">Nome: </label>
-            <input type="text" name="nome" placeholder="Digite seu nome" />
+            <label name="boletin_mensal" value="nome">Nome:</label>
+            <input id="entrada-dados-form" type="text" name="nome" placeholder="Digite seu nome"/>
             <br>
-            <label name="boletim_mensal" value="email">E-mail: </label>
-            <input name="email" placeholder="Digite seu email" />
+            <label name="boletim_mensal" value="email">E-mail:</label>
+            <input id="entrada-dados-form" name="email" placeholder="Digite seu email"/>
             <br>
-            <input type="submit" name="enviar" />
+            <!-- Accent-colored raised button with ripple -->
+              <button id="enviar-form" type="submit" name="enviar" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Enviar</button>
           </form>
         </section>
-        <footer>Atendimento:
+        <footer id="rodape-mobile">Atendimento:
           <a href="mailto:atendimento@meuamigocaopetshop.com"> atendimento@meuamigocaopetshop.com</a> - (0XX) 99999-9999 / (0XX) 88888-8888</footer>
         <!-- Fim do conteudo do corpo versao mobile -->
       </div>
@@ -95,12 +102,8 @@
   <!-- Fim versao mobile -->
   <!-- Inicio versao pc -->
   <header class="menu-pc">
-    <hgroup>
-      <picture>
-        <img id="logo-topo" src="multimidia/meu-amigo-cao-petshop-header.png" alt="nosso-espaco-luxo-pet" max-width="100%" height="auto"
-        />
-      </picture>
-      <a href="#">
+    <hgroup id="espaco_topo">
+      <a href="boletim.html">
         <button id="news" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
           Assine Nossa Newsletter </button>
       </a>
@@ -133,19 +136,29 @@
   </header>
   <!-- Inicio conteudo do corpo versao pc -->
   <section id="conteudo-corpo">
-    <h1>Boletim Mensal</h1>
-    <h2>Fazendo sua assinatura você receberá mensalmente informações sobre nossos produtos, serviços, eventos e descontos.</h2>
-    <form>
-      <label name="boletin_mensal" value="nome">Nome: </label>
-      <input type="text" name="nome" placeholder="Digite seu nome" />
-      <br>
-      <label name="boletim_mensal" value="email">E-mail: </label>
-      <input name="email" placeholder="Digite seu email" />
-      <br>
-      <input type="submit" name="enviar" />
-    </form>
+    <main class="mdl-layout__content">
+        <!-- quadro obrigado -->
+            <span class="mdl-layout-title"><h1>Boletim Mensal</h1></span>
+            <div class="mdl-layout-spacer">
+            <h2>Fazendo sua assinatura você receberá mensalmente informações sobre nossos produtos, serviços, eventos e descontos.</h2></div>
+            <img id="pet-surpresa-movel" src="multimidia/pet-surpresa.png" alt="pet-diz-obrigado" max-width="50%" height="auto"/>
+            <br>
+            <p id="obrigado-movel">Nossa equipe irá conferir sua solicitação e enviará uma confirmação para o email informado</p>
+        </main>
+     <form>
+            <label name="boletin_mensal" value="nome">Nome:</label>
+            <input id="entrada-dados-form" type="text" name="nome" placeholder="Digite seu nome"/>
+            <br>
+            <label name="boletim_mensal" value="email">E-mail:</label>
+            <input id="entrada-dados-form" name="email" placeholder="Digite seu email"/>
+            <br>
+            <!-- Accent-colored raised button with ripple -->
+              <button id="enviar-form" type="submit" name="enviar" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Enviar</button>
+          </form>
   </section>
   <!-- Fim do conteudo do corpo versao pc -->
-  <footer id="rodape-corpo">Atendimento:
+  <footer id="rodape-pc">Atendimento:
     <a href="mailto:atendimento@meuamigocaopetshop.com"> atendimento@meuamigocaopetshop.com</a> - (0XX) 99999-9999 / (0XX) 88888-8888</footer>
+    </body>
   <script src="js/material/material.min.js"></script>
+</html>

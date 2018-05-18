@@ -150,31 +150,43 @@ hgroup#espaco_topo{/*efeito paralax topo versao pc*/
 nav{/*estilo responsivo para o menu todo*/
     display: flex;
     background-color: #e91e63;
-    padding-left: 25%;
+    padding-left: 20%;
     margin: 0px;    
+    font-size: 1.8em;
 }
+@media (min-width: 1024px){
+    nav{/*estilo responsivo para o menu todo*/
+        display: flex;
+        background-color: #e91e63;
+        padding-left: 7%;
+        margin: 0px;    
+        font-size: 2em;
+    }
 @media (min-width: 1300px){
     nav{/*estilo responsivo para o menu todo*/
         display: flex;
         background-color: #e91e63;
-        padding-left: 30%;
+        padding-left: 20%;
         margin: 0px;    
+        font-size: 2em;
     }
 }
 @media (min-width: 1600px){
     nav{/*estilo responsivo para o menu todo*/
         display: flex;
         background-color: #e91e63;
-        padding-left: 35%;
+        padding-left: 25%;
         margin: 0px;    
+        font-size: 2em;
     }
 }
 @media (min-width: 2048px){
     nav{/*estilo responsivo para o menu todo*/
         display: flex;
         background-color: #e91e63;
-        padding-left: 38%;
-        margin: 0px;    
+        padding-left: 30%;
+        margin: 0px;  
+        font-size: 2em;
     }
 }
 
@@ -182,8 +194,9 @@ nav{/*estilo responsivo para o menu todo*/
     nav{/*estilo responsivo para o menu todo*/
         display: flex;
         background-color: #e91e63;
-        padding-left: 43%;
-        margin: 0px;    
+        padding-left: 35%;
+        margin: 0px;   
+        font-size: 2.5em;
     }
 }
 nav a{/*estiliza os links com alinhamento*/
@@ -195,41 +208,6 @@ nav a{/*estiliza os links com alinhamento*/
 nav a:hover{/*muda cor com mouse hover*/
     background-color: white;
     color: #333;
-}
-section{/*conteiner de colunas de embrulho*/
-    display: flex;
-    flex-wrap: wrap;
-}
-aside#esq{
-    flex: 30%;
-    background-color: #333;
-    padding: 10px;
-}
-aside#dir{
-    flex: 30%;
-    background-color: #333;
-    padding: 10px;
-}
-article{
-    flex: 70%;
-    background-color: white;
-    padding: 10px;
-}
-figure{
-    max-width:100%;
-    height: auto;
-    background-color: white;
-    padding: 10px;
-}
-footer{
-    text-align: center;
-    padding: 5px;
-    color: white;
-    background-color: #333;
-}
-button#news{
-    font-family: 'fonte-padrao', "sans-serif";
-    color: white;
 }
 @media (min-width: 768px){
 p#chamar_acao{
@@ -243,7 +221,7 @@ p#chamar_acao{
     }
 }
 @media (max-width: 768px){
-p#chamar_acao{
+p#chamar_acao{/*estilo nome da chamada do usuario para acao*/
     font-size: 1.3em;
     font-weight: bold;
     color: black;
