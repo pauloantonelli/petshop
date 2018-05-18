@@ -5,13 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=width-device, initial-scale=1" />
   <link rel="stylesheet" href="css/estilo.css" />
-  <link rel="stylesheet" href="css/material/material.min.css">
-  
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/material/material.min.css" />
+  <link rel="stylesheet" href="css/conteudo.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <title>Obrigado!</title>
 </head>
 
 <body>
+  <!-- Inicio versao mobile -->
   <!-- Barra de menu sempre visivel. -->
   <div id="mat-header" class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
@@ -25,7 +26,8 @@
       </div>
     </header>
     <div class="mdl-layout__drawer">
-      <span id="menu_lateral_fundo_superior" class="mdl-layout-title"><img src="multimidia/focinho-pet.png"/> PETSHOP</span>
+      <span id="menu_lateral_fundo_superior" class="mdl-layout-title">
+        <img src="multimidia/focinho-pet.png" /> PETSHOP</span>
       <nav class="mdl-navigation">
         <a class="mdl-navigation__link" href="index.html">Home</a>
         <a class="mdl-navigation__link" href="quem-somos.html">Quem Somos</a>
@@ -33,18 +35,19 @@
         <a class="mdl-navigation__link" href="agendamento.html">Banho e Tosa</a>
         <a class="mdl-navigation__link" href="curiosidades.html">Curiosidades</a>
       </nav>
-        <span id="menu_lateral_fundo_inferior" class="mdl-layout-title">Amigo Cão <img src="multimidia/ossinho.png"/></span>
+      <span id="menu_lateral_fundo_inferior" class="mdl-layout-title">Amigo Cão
+        <img src="multimidia/ossinho.png" />
+      </span>
     </div>
     <main class="mdl-layout__content">
       <div class="page-content">
-
         <!-- conteudo da pagina com conexao dos elementos do topo com menu mat -->
         <hgroup>
           <picture>
             <img id="logo-topo" src="multimidia/meu-amigo-cao-petshop-header.png" alt="nosso-espaco-luxo-pet" max-width="100%" height="auto"
             />
           </picture>
-          <a href="#">
+          <a href="boletim.html">
             <button id="news" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
               Assine Nossa Newsletter </button>
           </a>
@@ -95,33 +98,29 @@
   <!-- Fim versao mobile -->
   <!-- Inicio versao pc -->
   <header class="menu-pc">
-    <hgroup>
-          <picture>
-            <img id="logo-topo" src="multimidia/meu-amigo-cao-petshop-header.png" alt="nosso-espaco-luxo-pet" max-width="100%" height="auto"
-            />
-          </picture>
-          <a href="#">
-            <button id="news" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-              Assine Nossa Newsletter </button>
-          </a>
-          <div>
-            <p id="chamar_acao"> nos acompanhe: </p>
-            <a href="https://facebook.com" target="_blank">
-              <img src="multimidia/ms-facebook.gif" alt="facebook-logo" / max-width="100%" />
-            </a>
-            <a href="https://twitter.com" target="_blank">
-              <img src="multimidia/ms-twitter.gif" alt="twitter-logo" / max-width="100%" />
-            </a>
-            <a href="https://youtube.com" target="_blank">
-              <img src="multimidia/ms-youtube.gif" alt="youtube-logo" / max-width="100%" />
-            </a>
-            <a href="https://br.pinterest.com" target="_blank">
-              <img src="multimidia/ms-pinterest.gif" alt="pintrest-logo" / max-width="100%" />
-            </a>
-            <a href="https://plus.google.com/" target="_blank">
-              <img src="multimidia/ms-gmais.gif" alt="google-plus-logo" / max-width="100%" />
-            </a>
-          </div>
+    <hgroup id="espaco_topo">
+      <a href="boletim.html">
+        <button id="news" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+          Assine Nossa Newsletter </button>
+      </a>
+      <div>
+        <p id="chamar_acao"> nos acompanhe: </p>
+        <a href="https://facebook.com" target="_blank">
+          <img src="multimidia/ms-facebook.gif" alt="facebook-logo" / max-width="100%" />
+        </a>
+        <a href="https://twitter.com" target="_blank">
+          <img src="multimidia/ms-twitter.gif" alt="twitter-logo" / max-width="100%" />
+        </a>
+        <a href="https://youtube.com" target="_blank">
+          <img src="multimidia/ms-youtube.gif" alt="youtube-logo" / max-width="100%" />
+        </a>
+        <a href="https://br.pinterest.com" target="_blank">
+          <img src="multimidia/ms-pinterest.gif" alt="pintrest-logo" / max-width="100%" />
+        </a>
+        <a href="https://plus.google.com/" target="_blank">
+          <img src="multimidia/ms-gmais.gif" alt="google-plus-logo" / max-width="100%" />
+        </a>
+      </div>
     </hgroup>
     <nav>
       <a href="index.html"> Home </a>
@@ -153,3 +152,5 @@
     <a href="mailto:atendimento@meuamigocaopetshop.com"> atendimento@meuamigocaopetshop.com</a> - (0XX) 99999-9999 / (0XX) 88888-8888</footer>
 </body>
 <script src="js/material/material.min.js"></script>
+
+</html>

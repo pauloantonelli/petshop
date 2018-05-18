@@ -13,7 +13,7 @@ body{/*estilo de alinhamento do corpo*/
 header.mdl-layout__header{
     /background-color: firebrick;/*muda a cor da barra*/
 }
-div.mdl-layout__drawer{
+div.mdl-layout__drawer{/*muda estilo menu lateral*/
     color: white;
     text-align: center;
     background-color: #E91E63;
@@ -24,7 +24,7 @@ div.mdl-layout__drawer{
     background-position: bottom;
     background-size: 150px;
 }
-nav.mdl-navigation{
+nav.mdl-navigation{/*muda estilo menu lateral*/
     color: white;
     background-color: floralwhite;
     margin-top: 0px;
@@ -32,17 +32,17 @@ nav.mdl-navigation{
     padding-top: 0px;
     padding-bottom: 0px;
 }
-a.mdl-navigation__link{
+a.mdl-navigation__link{/*muda estilo menu lateral*/
     font-size: 1.3em;
     margin: 0px;
 }
-span#menu_lateral_fundo_superior{
+span#menu_lateral_fundo_superior{/*muda estilo menu lateral*/
     background-color: #E91E63;
     /background-image: url(../multimidia/back-bolinha.gif);/*enfeite original do projeto do livro desativado*/
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
-span#menu_lateral_fundo_inferior{
+span#menu_lateral_fundo_inferior{/*muda estilo menu lateral*/
     margin: 0px;
     font-size: 1.8em;
     font-weight: bold;
@@ -50,12 +50,12 @@ span#menu_lateral_fundo_inferior{
 }
 /*ajustes menu mobile*/
 @media (min-width: 769px){
-    div#mat-header{
+    div.mdl-layout__container, div#mat-header, aside#mov_esq, aside#mov_dir{
     display: none;
     }
 }
 @media (max-width: 768px){
-    header.menu-pc,section#conteudo-corpo, footer#rodape-corpo{
+    header.menu-pc,section#conteudo-corpo, footer#rodape-corpo, aside#esq, aside#dir{
     display: none;
     }
 }
@@ -136,18 +136,29 @@ hgroup{/*estilo de alinhamento do grupo do cabecalho*/
     margin: 0px;
     text-align: center;
 }
+hgroup#espaco_topo{/*efeito paralax topo versao pc*/
+    padding-top: 140px;
+    
+    background-image: url(../multimidia/petshop-luxo2.jpg);
+    height: 250px;
+    /*efeito parallax no scrool*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 nav{/*estilo responsivo para o menu todo*/
     display: flex;
     background-color: #e91e63;
     padding-left: 25%;
-    margin: 2px 0px;    
+    margin: 0px;    
 }
 @media (min-width: 1300px){
     nav{/*estilo responsivo para o menu todo*/
         display: flex;
         background-color: #e91e63;
         padding-left: 30%;
-        margin: 14px 0px;    
+        margin: 0px;    
     }
 }
 @media (min-width: 1600px){
@@ -155,7 +166,7 @@ nav{/*estilo responsivo para o menu todo*/
         display: flex;
         background-color: #e91e63;
         padding-left: 35%;
-        margin: 14px 0px;    
+        margin: 0px;    
     }
 }
 @media (min-width: 2048px){
@@ -163,7 +174,7 @@ nav{/*estilo responsivo para o menu todo*/
         display: flex;
         background-color: #e91e63;
         padding-left: 38%;
-        margin: 14px 0px;    
+        margin: 0px;    
     }
 }
 
@@ -172,7 +183,7 @@ nav{/*estilo responsivo para o menu todo*/
         display: flex;
         background-color: #e91e63;
         padding-left: 43%;
-        margin: 14px 0px;    
+        margin: 0px;    
     }
 }
 nav a{/*estiliza os links com alinhamento*/
@@ -220,14 +231,28 @@ button#news{
     font-family: 'fonte-padrao', "sans-serif";
     color: white;
 }
+@media (min-width: 768px){
 p#chamar_acao{
     font-size: 1.3em;
     font-weight: bold;
+    color: white;
+    text-shadow: 1px 2px 9px rgba(10,10,10,0.5);
     text-decoration-line: underline;
     margin-top: 10px;
     margin-bottom: 0px;
+    }
 }
-
+@media (max-width: 768px){
+p#chamar_acao{
+    font-size: 1.3em;
+    font-weight: bold;
+    color: black;
+    text-shadow: 1px 2px 9px rgba(10,10,10,0.5);
+    text-decoration-line: underline;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    }
+}
 /* Layout Responsivo - Quando a tela é menor que 768px de largura, faz as duas colunas se empilharem no topo uma da outra ao inves de ficar lado a lado */
 @media (max-width: 768px){
     section, nav{

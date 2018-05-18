@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=width-device, initial-scale=1" />
   <link rel="stylesheet" href="css/estilo.css" />
-  <link rel="stylesheet" href="css/material/material.min.css" />
-  <link rel="stylesheet" href="css/conteudo.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="css/material/material.min.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <title>Obrigado!</title>
 </head>
 
@@ -41,6 +41,7 @@
     </div>
     <main class="mdl-layout__content">
       <div class="page-content">
+
         <!-- conteudo da pagina com conexao dos elementos do topo com menu mat -->
         <hgroup>
           <picture>
@@ -73,52 +74,17 @@
         <!-- Fim elementos do topo -->
         <!-- Inicio conteudo do corpo versao mobile -->
         <section>
-          <article>
-            <h1>Rações</h1>
-            <div>
-              <h2>Porte Pequeno</h2>
-              <h2>Marca</h2>
-              <div>
-                <h3>Vestibulum</h3>
-                <img src="multimidia/pq_emb_pequeno1.png" alt="racao-Vestibulum" />
-                <h4>Preço: R$5,00</h4>
-              </div>
-              <div>
-                <h3>Nunc</h3>
-                <img src="multimidia/pq_emb_pequeno2.png" alt="racao-Nunc" />
-                <h4>Preço: R$4,80</h4>
-              </div>
-            </div>
-            <div>
-              <h2>Porte Médio</h2>
-              <h2>Marca</h2>
-              <div>
-                <h3>Mollis</h3>
-                <img src="multimidia/pq_emb_medio1.png" alt="racao-Mollis" />
-                <h4>Preço: R$9,90</h4>
-              </div>
-              <div>
-                <h3>Porttitor</h3>
-                <img src="multimidia/pq_emb_medio2.png" alt="racao-Porttitor" />
-                <h4>Preço: R$8,90</h4>
-              </div>
-            </div>
-            <div>
-              <h2>Porte Grande</h2>
-              <h2>Marca</h2>
-              <div>
-                <h3>Lacinia</h3>
-                <img src="multimidia/pq_emb_grande1.png" alt="racao-Lacinia" />
-                <h4>Preço: R$15,90</h4>
-              </div>
-              <div>
-                <h3>Sapien</h3>
-                <img src="multimidia/pq_emb_grande2.png" alt="racao-Sapien" />
-                <h4>Preço: R$18,90</h4>
-              </div>
-            </div>
-          </article>
-          <p>Consulte nossos preços para grandes quantidades</p>
+          <h1>Boletim Mensal</h1>
+          <h2>Fazendo sua assinatura você receberá mensalmente informações sobre nossos produtos, serviços, eventos e descontos.</h2>
+          <form>
+            <label name="boletin_mensal" value="nome">Nome: </label>
+            <input type="text" name="nome" placeholder="Digite seu nome" />
+            <br>
+            <label name="boletim_mensal" value="email">E-mail: </label>
+            <input name="email" placeholder="Digite seu email" />
+            <br>
+            <input type="submit" name="enviar" />
+          </form>
         </section>
         <footer>Atendimento:
           <a href="mailto:atendimento@meuamigocaopetshop.com"> atendimento@meuamigocaopetshop.com</a> - (0XX) 99999-9999 / (0XX) 88888-8888</footer>
@@ -129,8 +95,12 @@
   <!-- Fim versao mobile -->
   <!-- Inicio versao pc -->
   <header class="menu-pc">
-    <hgroup id="espaco_topo">
-      <a href="boletim.html">
+    <hgroup>
+      <picture>
+        <img id="logo-topo" src="multimidia/meu-amigo-cao-petshop-header.png" alt="nosso-espaco-luxo-pet" max-width="100%" height="auto"
+        />
+      </picture>
+      <a href="#">
         <button id="news" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
           Assine Nossa Newsletter </button>
       </a>
@@ -163,57 +133,19 @@
   </header>
   <!-- Inicio conteudo do corpo versao pc -->
   <section id="conteudo-corpo">
-    <article>
-      <h1>Rações</h1>
-      <div>
-        <h2>Porte Pequeno</h2>
-        <h2>Marca</h2>
-        <div>
-          <h3>Vestibulum</h3>
-          <img src="multimidia/pq_emb_pequeno1.png" alt="racao-Vestibulum" />
-          <h4>Preço: R$5,00</h4>
-        </div>
-        <div>
-          <h3>Nunc</h3>
-          <img src="multimidia/pq_emb_pequeno2.png" alt="racao-Nunc" />
-          <h4>Preço: R$4,80</h4>
-        </div>
-      </div>
-      <div>
-        <h2>Porte Médio</h2>
-        <h2>Marca</h2>
-        <div>
-          <h3>Mollis</h3>
-          <img src="multimidia/pq_emb_medio1.png" alt="racao-Mollis" />
-          <h4>Preço: R$9,90</h4>
-        </div>
-        <div>
-          <h3>Porttitor</h3>
-          <img src="multimidia/pq_emb_medio2.png" alt="racao-Porttitor" />
-          <h4>Preço: R$8,90</h4>
-        </div>
-      </div>
-      <div>
-        <h2>Porte Grande</h2>
-        <h2>Marca</h2>
-        <div>
-          <h3>Lacinia</h3>
-          <img src="multimidia/pq_emb_grande1.png" alt="racao-Lacinia" />
-          <h4>Preço: R$15,90</h4>
-        </div>
-        <div>
-          <h3>Sapien</h3>
-          <img src="multimidia/pq_emb_grande2.png" alt="racao-Sapien" />
-          <h4>Preço: R$18,90</h4>
-        </div>
-      </div>
-    </article>
-    <p>Consulte nossos preços para grandes quantidades</p>
+    <h1>Boletim Mensal</h1>
+    <h2>Fazendo sua assinatura você receberá mensalmente informações sobre nossos produtos, serviços, eventos e descontos.</h2>
+    <form>
+      <label name="boletin_mensal" value="nome">Nome: </label>
+      <input type="text" name="nome" placeholder="Digite seu nome" />
+      <br>
+      <label name="boletim_mensal" value="email">E-mail: </label>
+      <input name="email" placeholder="Digite seu email" />
+      <br>
+      <input type="submit" name="enviar" />
+    </form>
   </section>
   <!-- Fim do conteudo do corpo versao pc -->
   <footer id="rodape-corpo">Atendimento:
     <a href="mailto:atendimento@meuamigocaopetshop.com"> atendimento@meuamigocaopetshop.com</a> - (0XX) 99999-9999 / (0XX) 88888-8888</footer>
-</body>
-<script src="js/material/material.min.js"></script>
-
-</html>
+  <script src="js/material/material.min.js"></script>

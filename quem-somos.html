@@ -1,62 +1,204 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=width-device, initial-scale=1"/>
-    <link rel="stylesheet" href="css/estilo.css"/>
-	<title>Quem Somos</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=width-device, initial-scale=1" />
+  <link rel="stylesheet" href="css/estilo.css" />
+  <link rel="stylesheet" href="css/material/material.min.css" />
+  <link rel="stylesheet" href="css/conteudo.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <title>Obrigado!</title>
 </head>
+
 <body>
-	<header>
-	<hgroup>
-		<picture>
-		  <source srcset="multimidia/meu-amigo-cao-petshop-header.png" media="(max-width: 480px)">
-		  <img src="multimidia/anuncio-cantinho-feliz-h.jpg" alt="cartao-telefone" max-width="100%" height="auto">
-		</picture>
-		<a href="#"><button> Assine Nossa Newsletter </button></a>
-		<div>
-		  <p> nos acompanhe: </p>
-		  <a href="https://facebook.com" target="_blank"><img src="multimidia/ms-facebook.gif" alt="facebook-logo"/ max-width="100%"/></a>
-		  <a href="https://twitter.com" target="_blank"><img src="multimidia/ms-twitter.gif" alt="twitter-logo"/ max-width="100%"/></a>
-		  <a href="https://youtube.com" target="_blank"><img src="multimidia/ms-youtube.gif" alt="youtube-logo"/ max-width="100%"/></a>
-		  <a href="https://br.pinterest.com" target="_blank"><img src="multimidia/ms-pinterest.gif" alt="pintrest-logo"/ max-width="100%"/></a>
-		  <a href="https://plus.google.com/" target="_blank"><img src="multimidia/ms-gmais.gif" alt="google-plus-logo"/ max-width="100%"/></a>
-        </div>
+  <!-- Inicio versao mobile -->
+  <!-- Barra de menu sempre visivel. -->
+  <div id="mat-header" class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div id="barra_menu" class="mdl-layout__header-row">
+        <!-- Title -->
+        <span id="topo_menu" class="mdl-layout-title">Amigo Cão
+          <img src="multimidia/lacinho.png" width="20%" heigth="auto" />
+        </span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer">
+      <span id="menu_lateral_fundo_superior" class="mdl-layout-title">
+        <img src="multimidia/focinho-pet.png" /> PETSHOP</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="index.html">Home</a>
+        <a class="mdl-navigation__link" href="quem-somos.html">Quem Somos</a>
+        <a class="mdl-navigation__link" href="produtos.html">Produtos</a>
+        <a class="mdl-navigation__link" href="agendamento.html">Banho e Tosa</a>
+        <a class="mdl-navigation__link" href="curiosidades.html">Curiosidades</a>
+      </nav>
+      <span id="menu_lateral_fundo_inferior" class="mdl-layout-title">Amigo Cão
+        <img src="multimidia/ossinho.png" />
+      </span>
+    </div>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <!-- conteudo da pagina com conexao dos elementos do topo com menu mat -->
+        <hgroup>
+          <picture>
+            <img id="logo-topo" src="multimidia/meu-amigo-cao-petshop-header.png" alt="nosso-espaco-luxo-pet" max-width="100%" height="auto"
+            />
+          </picture>
+          <a href="boletim.html">
+            <button id="news" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+              Assine Nossa Newsletter </button>
+          </a>
+          <div>
+            <p id="chamar_acao"> nos acompanhe: </p>
+            <a href="https://facebook.com" target="_blank">
+              <img src="multimidia/ms-facebook.gif" alt="facebook-logo" / max-width="100%" />
+            </a>
+            <a href="https://twitter.com" target="_blank">
+              <img src="multimidia/ms-twitter.gif" alt="twitter-logo" / max-width="100%" />
+            </a>
+            <a href="https://youtube.com" target="_blank">
+              <img src="multimidia/ms-youtube.gif" alt="youtube-logo" / max-width="100%" />
+            </a>
+            <a href="https://br.pinterest.com" target="_blank">
+              <img src="multimidia/ms-pinterest.gif" alt="pintrest-logo" / max-width="100%" />
+            </a>
+            <a href="https://plus.google.com/" target="_blank">
+              <img src="multimidia/ms-gmais.gif" alt="google-plus-logo" / max-width="100%" />
+            </a>
+          </div>
+        </hgroup>
+        <!-- Fim elementos do topo -->
+        <!-- Inicio conteudo do corpo versao mobile -->
+        <section>
+          <h1>Local</h1>
+          [aqui um iframe]
+          <article>
+            <img src="multimidia/meuamigocao.jpg" alt="garoto com seu pet">
+            <h1>Quem Somos</h1>
+            <p>O que nós acreditamos Na Meu amigo cão, o nosso sucesso como uma organização é conduzida pelo cuidado que temos
+              com nossos animais. Cras semper magna in velit tempus tristique quis non lorem. Mauris vitae fringilla sapien,
+              sed volutpat elit. Fusce molestie euismod odio, ut blandit nulla bibendum ac. Fusce posuere turpis sed sem
+              tincidunt, sed auctor tellus faucibus. Proin ultrices enim vitae ipsum luctus, sed malesuada orci ornare. Vivamus
+              eget molestie magna, sed aliquam risus. Aliquam adipiscing laoreet felis, eget tincidunt purus sollicitudin
+              sit amet. Nulla facilisi. Donec dapibus nibh eu ipsum elementum, non consectetur massa facilisis. Nam commodo
+              at leo non commodo. In blandit arcu sit amet sem convallis, rutrum gravida quam elementum. Cras accumsan orci
+              vel lectus blandit, at dictum tellus rhoncus. Etiam vitae urna nec leo facilisis auctor a quis lorem. Integer
+              dolor urna, luctus quis consequat vitae, vestibulum non lectus. In turpis mi, tincidunt non iaculis ac, feugiat
+              eget purus.</p>
+          </article>
+          <article>
+            <h1>Visão</h1>
+            <h2>Animais bem cuidados: Donos mais felizes.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec tempus justo, nec sagittis enim. Vestibulum
+              eget augue dui. Vestibulum consequat pretium lectus vitae varius. Etiam facilisis quam et nulla posuere feugiat.
+              Quisque eu augue mi. Vivamus sagittis metus tortor, vitae vehicula mauris interdum id. Maecenas nulla velit,
+              posuere in pharetra eu, lacinia non est. Nunc eleifend dignissim arcu et facilisis. Cras luctus scelerisque
+              dapibus. Nam sit amet velit quis turpis rhoncus vestibulum. Phasellus feugiat sem sit amet eros laoreet, sit
+              amet interdum sem tempor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+              egestas. Pellentesque venenatis metus et porttitor interdum. Donec at leo sem. Sed nec ultricies nisi.</p>
+          </article>
+          <article>
+            <h1>Valores</h1>
+            <h2>Nossas decisões e comportamentos são guiados por nossos valores</h2>
+            <p>Pellentesque porttitor mi venenatis, pharetra tellus vitae, egestas leo. Nullam euismod lorem vitae nisi cursus,
+              ac fringilla dolor mattis. Mauris posuere, est a volutpat tempus, velit tellus consequat risus, feugiat condimentum
+              neque erat vitae nibh. Pellentesque ac mauris libero. Cras eget orci pulvinar, vehicula sapien eu, volutpat
+              lorem. Duis tristique vehicula libero nec ornare. Proin ultricies tempor lorem non facilisis. Pellentesque
+              ac sem vel dui cursus sagittis. Cras non nulla nunc. Ut nulla orci, eleifend mollis lorem ut, congue mollis
+              sapien. Vestibulum id fermentum mi, nec scelerisque velit. Sed sed lectus aliquam augue lobortis volutpat quis
+              sit amet nisi. Proin ornare turpis congue nulla consectetur, sollicitudin euismod nisi vulputate. Cras tincidunt
+              lacus eget risus posuere, pulvinar elementum turpis sollicitudin. Proin egestas blandit volutpat.</p>
+          </article>
+        </section>
+        <footer>Atendimento:
+          <a href="mailto:atendimento@meuamigocaopetshop.com"> atendimento@meuamigocaopetshop.com</a> - (0XX) 99999-9999 / (0XX) 88888-8888</footer>
+        <!-- Fim do conteudo do corpo versao mobile -->
+      </div>
+    </main>
+  </div>
+  <!-- Fim versao mobile -->
+  <!-- Inicio versao pc -->
+  <header class="menu-pc">
+    <hgroup id="espaco_topo">
+      <a href="boletim.html">
+        <button id="news" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+          Assine Nossa Newsletter </button>
+      </a>
+      <div>
+        <p id="chamar_acao"> nos acompanhe: </p>
+        <a href="https://facebook.com" target="_blank">
+          <img src="multimidia/ms-facebook.gif" alt="facebook-logo" / max-width="100%" />
+        </a>
+        <a href="https://twitter.com" target="_blank">
+          <img src="multimidia/ms-twitter.gif" alt="twitter-logo" / max-width="100%" />
+        </a>
+        <a href="https://youtube.com" target="_blank">
+          <img src="multimidia/ms-youtube.gif" alt="youtube-logo" / max-width="100%" />
+        </a>
+        <a href="https://br.pinterest.com" target="_blank">
+          <img src="multimidia/ms-pinterest.gif" alt="pintrest-logo" / max-width="100%" />
+        </a>
+        <a href="https://plus.google.com/" target="_blank">
+          <img src="multimidia/ms-gmais.gif" alt="google-plus-logo" / max-width="100%" />
+        </a>
+      </div>
     </hgroup>
     <nav>
-		<a href="index.html"> Home </a>
-		<a href="quem-somos.html"> Quem Somos </a>
-		<a href="produtos.html"> Produtos </a>
-        <a href="agendamento.html"> Banho e Tosa </a>
-        <a href="curiosidades.html"> Curiosidades </a>
-	</nav>
-</header>
-<section>
-    <h1>Local</h1>
-    [aqui um iframe]
-    <article>
+      <a href="index.html"> Home </a>
+      <a href="quem-somos.html"> Quem Somos </a>
+      <a href="produtos.html"> Produtos </a>
+      <a href="agendamento.html"> Banho e Tosa </a>
+      <a href="curiosidades.html"> Curiosidades </a>
+    </nav>
+  </header>
+  <!-- Inicio conteudo do corpo versao pc -->
+  <section id="conteudo-corpo">
+    <section>
+      <h1>Local</h1>
+      [aqui um iframe]
+      <article>
         <img src="multimidia/meuamigocao.jpg" alt="garoto com seu pet">
         <h1>Quem Somos</h1>
-        <p>O que nós acreditamos 
-Na Meu amigo cão, o nosso sucesso como uma organização é conduzida pelo cuidado que temos com nossos animais.
-
-Cras semper magna in velit tempus tristique quis non lorem. Mauris vitae fringilla sapien, sed volutpat elit. Fusce molestie euismod odio, ut blandit nulla bibendum ac. Fusce posuere turpis sed sem tincidunt, sed auctor tellus faucibus. Proin ultrices enim vitae ipsum luctus, sed malesuada orci ornare. Vivamus eget molestie magna, sed aliquam risus. Aliquam adipiscing laoreet felis, eget tincidunt purus sollicitudin sit amet. Nulla facilisi.
-
-Donec dapibus nibh eu ipsum elementum, non consectetur massa facilisis. Nam commodo at leo non commodo. In blandit arcu sit amet sem convallis, rutrum gravida quam elementum. Cras accumsan orci vel lectus blandit, at dictum tellus rhoncus. Etiam vitae urna nec leo facilisis auctor a quis lorem. Integer dolor urna, luctus quis consequat vitae, vestibulum non lectus. In turpis mi, tincidunt non iaculis ac, feugiat eget purus.</p>
-    </article>
-    <article>
+        <p>O que nós acreditamos Na Meu amigo cão, o nosso sucesso como uma organização é conduzida pelo cuidado que temos com
+          nossos animais. Cras semper magna in velit tempus tristique quis non lorem. Mauris vitae fringilla sapien, sed
+          volutpat elit. Fusce molestie euismod odio, ut blandit nulla bibendum ac. Fusce posuere turpis sed sem tincidunt,
+          sed auctor tellus faucibus. Proin ultrices enim vitae ipsum luctus, sed malesuada orci ornare. Vivamus eget molestie
+          magna, sed aliquam risus. Aliquam adipiscing laoreet felis, eget tincidunt purus sollicitudin sit amet. Nulla facilisi.
+          Donec dapibus nibh eu ipsum elementum, non consectetur massa facilisis. Nam commodo at leo non commodo. In blandit
+          arcu sit amet sem convallis, rutrum gravida quam elementum. Cras accumsan orci vel lectus blandit, at dictum tellus
+          rhoncus. Etiam vitae urna nec leo facilisis auctor a quis lorem. Integer dolor urna, luctus quis consequat vitae,
+          vestibulum non lectus. In turpis mi, tincidunt non iaculis ac, feugiat eget purus.</p>
+      </article>
+      <article>
         <h1>Visão</h1>
         <h2>Animais bem cuidados: Donos mais felizes.</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec tempus justo, nec sagittis enim. Vestibulum eget augue dui. Vestibulum consequat pretium lectus vitae varius. Etiam facilisis quam et nulla posuere feugiat. Quisque eu augue mi.
-
-Vivamus sagittis metus tortor, vitae vehicula mauris interdum id. Maecenas nulla velit, posuere in pharetra eu, lacinia non est. Nunc eleifend dignissim arcu et facilisis. Cras luctus scelerisque dapibus. Nam sit amet velit quis turpis rhoncus vestibulum. Phasellus feugiat sem sit amet eros laoreet, sit amet interdum sem tempor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque venenatis metus et porttitor interdum. Donec at leo sem. Sed nec ultricies nisi.</p>
-    </article>
-    <article>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec tempus justo, nec sagittis enim. Vestibulum
+          eget augue dui. Vestibulum consequat pretium lectus vitae varius. Etiam facilisis quam et nulla posuere feugiat.
+          Quisque eu augue mi. Vivamus sagittis metus tortor, vitae vehicula mauris interdum id. Maecenas nulla velit, posuere
+          in pharetra eu, lacinia non est. Nunc eleifend dignissim arcu et facilisis. Cras luctus scelerisque dapibus. Nam
+          sit amet velit quis turpis rhoncus vestibulum. Phasellus feugiat sem sit amet eros laoreet, sit amet interdum sem
+          tempor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque
+          venenatis metus et porttitor interdum. Donec at leo sem. Sed nec ultricies nisi.</p>
+      </article>
+      <article>
         <h1>Valores</h1>
         <h2>Nossas decisões e comportamentos são guiados por nossos valores</h2>
-        <p>Pellentesque porttitor mi venenatis, pharetra tellus vitae, egestas leo. Nullam euismod lorem vitae nisi cursus, ac fringilla dolor mattis. Mauris posuere, est a volutpat tempus, velit tellus consequat risus, feugiat condimentum neque erat vitae nibh. Pellentesque ac mauris libero. Cras eget orci pulvinar, vehicula sapien eu, volutpat lorem. Duis tristique vehicula libero nec ornare. Proin ultricies tempor lorem non facilisis. Pellentesque ac sem vel dui cursus sagittis. Cras non nulla nunc. Ut nulla orci, eleifend mollis lorem ut, congue mollis sapien. Vestibulum id fermentum mi, nec scelerisque velit. Sed sed lectus aliquam augue lobortis volutpat quis sit amet nisi. Proin ornare turpis congue nulla consectetur, sollicitudin euismod nisi vulputate. Cras tincidunt lacus eget risus posuere, pulvinar elementum turpis sollicitudin. Proin egestas blandit volutpat.</p>
-    </article>
-</section>
-<footer>Atendimento: <a href="mailto:atendimento@meuamigocaopetshop.com"> atendimento@meuamigocaopetshop.com</a> - (0XX) 99999-9999 / (0XX) 88888-8888</footer>
+        <p>Pellentesque porttitor mi venenatis, pharetra tellus vitae, egestas leo. Nullam euismod lorem vitae nisi cursus,
+          ac fringilla dolor mattis. Mauris posuere, est a volutpat tempus, velit tellus consequat risus, feugiat condimentum
+          neque erat vitae nibh. Pellentesque ac mauris libero. Cras eget orci pulvinar, vehicula sapien eu, volutpat lorem.
+          Duis tristique vehicula libero nec ornare. Proin ultricies tempor lorem non facilisis. Pellentesque ac sem vel
+          dui cursus sagittis. Cras non nulla nunc. Ut nulla orci, eleifend mollis lorem ut, congue mollis sapien. Vestibulum
+          id fermentum mi, nec scelerisque velit. Sed sed lectus aliquam augue lobortis volutpat quis sit amet nisi. Proin
+          ornare turpis congue nulla consectetur, sollicitudin euismod nisi vulputate. Cras tincidunt lacus eget risus posuere,
+          pulvinar elementum turpis sollicitudin. Proin egestas blandit volutpat.</p>
+      </article>
+    </section>
+    <!-- Fim do conteudo do corpo versao pc -->
+    <footer id="rodape-corpo">Atendimento:
+      <a href="mailto:atendimento@meuamigocaopetshop.com"> atendimento@meuamigocaopetshop.com</a> - (0XX) 99999-9999 / (0XX) 88888-8888</footer>
 </body>
+<script src="js/material/material.min.js"></script>
 </html>
