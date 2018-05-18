@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=width-device, initial-scale=1"/>
+    <link rel="stylesheet" href="css/estilo.css"/>
+	<title>Agendamentos</title>
+</head>
+<body>
+<header>
+	<hgroup>
+		<picture>
+		  <source srcset="multimidia/meu-amigo-cao-petshop-header.png" media="(max-width: 480px)">
+		  <img src="multimidia/anuncio-cantinho-feliz-h.jpg" alt="cartao-telefone" max-width="100%" height="auto">
+		</picture>
+		<a href="#"><button> Assine Nossa Newsletter </button></a>
+		<div>
+		  <p> nos acompanhe: </p>
+		  <a href="https://facebook.com" target="_blank"><img src="multimidia/ms-facebook.gif" alt="facebook-logo"/ max-width="100%"/></a>
+		  <a href="https://twitter.com" target="_blank"><img src="multimidia/ms-twitter.gif" alt="twitter-logo"/ max-width="100%"/></a>
+		  <a href="https://youtube.com" target="_blank"><img src="multimidia/ms-youtube.gif" alt="youtube-logo"/ max-width="100%"/></a>
+		  <a href="https://br.pinterest.com" target="_blank"><img src="multimidia/ms-pinterest.gif" alt="pintrest-logo"/ max-width="100%"/></a>
+		  <a href="https://plus.google.com/" target="_blank"><img src="multimidia/ms-gmais.gif" alt="google-plus-logo"/ max-width="100%"/></a>
+        </div>
+    </hgroup>
+    <nav>
+		<a href="index.html"> Home </a>
+		<a href="quem-somos.html"> Quem Somos </a>
+		<a href="produtos.html"> Produtos </a>
+        <a href="agendamento.html"> Banho e Tosa </a>
+        <a href="curiosidades.html"> Curiosidades </a>
+	</nav>
+</header>
+	<section>
+		<h1>Agendamento para banho e tosa</h1>
+		<h2>Faça o seu agendamento com pelo menos 48 horas de antecedência</h2>
+    <form id="dono">
+        <h3>Identificação do dono</h3>
+        <label>Nome: </label><input type="text" placeholder="Digite seu nome" id="nome-dono"/><br>
+        <label>Endereço: </label><input type="text" placeholder="Digite seu endereço" id="endereco"/><br>
+        <label>CEP: </label><input type="number" placeholder="Digite seu CEP" id="cep"/><br>
+        <label>Email: </label><input type="email" placeholder="Digite um email de contato" id="email"/><br>
+        <label>Tel/Cel: </label><input type="tel" placeholder="Digite um numero de contato" id="telefone"/>
+    </form>
+    <form id="animal">
+        <h3>Identificação do pet</h3>
+        <label>Nome: </label><input type="text" placeholder="Digite nome do seu pet" id="nome-animal"/><br>
+        <label>Porte do pet: </label><input type="radio" name="porte" value="pequeno" checked/> Pequeno <input type="radio" name="porte" value="medio"/> Medio <input type="radio" name="porte" value="grande"/> Grande <br>
+        <label>Tipo de tosa: </label>
+        <select>
+            <option value="nenhuma">Nenhuma</option>
+            <option value="tosa_padrao">Tosa Padrao</option>
+            <option value="tosa_higienica">Tosa Higiênica</option>
+            <option value="tosa_tesoura">Tosa na Tesoura</option>
+            <option value="tosa_raça">Tosa da Raça</option>
+            <option value="tosa_bebê">Tosa Bebê</option>
+        </select><br>
+        <label>Observações: </label><br><textarea row="10" cols="50" placeholder="Quer acrescentar alguma coisa a mais sobre seu pet? Digite aqui..."></textarea>
+    </form>
+    <form id="agenda">
+        <h3>Preferencia de Horário(Não abrimos domingo e segunda-feira)</h3>
+        <h4>Identifique os dias da semana de sua preferência: </h4>
+        <input type="checkbox" name="agendamento" value="terca"/>Terça-Feira
+        <input type="checkbox" name="agendamento" value="quarta"/>Quarta-feira
+        <input type="checkbox" name="agendamento" value="quinta"/>Quinta-feira
+        <input type="checkbox" name="agendamento" value="sexta"/>Sexta-feira
+        <input type="checkbox" name="agendamento" value="sabado"/>Sábado
+        <br>
+        <label>Primeira opção de horário: </label><input type="date" name="data_agendamento" value="primeiro"/>
+        <br>
+        <label>Segunda opção de horário: </label><input type="date" name="data_agendamento" valeu="segundo"/>
+        <br>
+    </form>
+    <a href="obrigado.html"><input type="button" name="submitbtn" value="Enviar"/></a>
+</section>
+<footer>Atendimento: <a href="mailto:atendimento@meuamigocaopetshop.com"> atendimento@meuamigocaopetshop.com</a> - (0XX) 99999-9999 / (0XX) 88888-8888</footer>
+</body>

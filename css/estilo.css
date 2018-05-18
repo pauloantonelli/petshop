@@ -1,0 +1,237 @@
+@charset "utf-8";
+@font-face{
+    font-family: 'fonte-padrao'; "sans-serif";
+    src: url("fontes/Roboto-regular.ttf");
+}
+*{
+    box-sizing: border-box;
+}
+body{/*estilo de alinhamento do corpo*/
+    margin: -20px 0px;
+}
+/*cor menu mobile*/
+header.mdl-layout__header{
+    /background-color: firebrick;/*muda a cor da barra*/
+}
+div.mdl-layout__drawer{
+    color: white;
+    text-align: center;
+    background-color: #E91E63;
+    /background-image: url(../multimidia/back-bolinha.gif);/*enfeite original do projeto do livro desativado*/
+    background-image: url('../multimidia/pet-surpresa.png');
+    background-repeat: no-repeat;
+    /background-attachment: fixed;
+    background-position: bottom;
+    background-size: 150px;
+}
+nav.mdl-navigation{
+    color: white;
+    background-color: floralwhite;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+a.mdl-navigation__link{
+    font-size: 1.3em;
+    margin: 0px;
+}
+span#menu_lateral_fundo_superior{
+    background-color: #E91E63;
+    /background-image: url(../multimidia/back-bolinha.gif);/*enfeite original do projeto do livro desativado*/
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+span#menu_lateral_fundo_inferior{
+    margin: 0px;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-shadow: 1px 2px 9px rgba(10,10,10,0.5);
+}
+/*ajustes menu mobile*/
+@media (min-width: 769px){
+    div#mat-header{
+    display: none;
+    }
+}
+@media (max-width: 768px){
+    header.menu-pc,section#conteudo-corpo, footer#rodape-corpo{
+    display: none;
+    }
+}
+/*ajustes finos menu material do topo*/
+@media (min-width: 320px){
+span#topo_menu{
+    margin: 0px 0.6em;
+    padding: 0px;
+    text-align: center;
+    }
+}
+@media (min-width: 375px){
+    span#topo_menu{
+    margin: 0px 2em;
+    padding: 0px;
+    text-align: center;
+    }
+}
+@media (min-width: 411px){
+    span#topo_menu{
+    margin: 0px 15%;
+    padding: 0px;
+    text-align: center;
+    }
+}
+@media (min-width: 500px){
+    span#topo_menu{
+    margin: 0px 25%;
+    padding: 0px;
+    text-align: center;
+    }
+}
+@media (min-width: 650px){
+    span#topo_menu{
+    margin: 0px 30%;
+    padding: 0px;
+    text-align: center;
+    }
+}
+/*logo do amigo cao com botao*/
+@media (min-width: 768px){
+    img#logo-topo{
+    margin-left: 30%;
+    padding: 10px;
+    }
+}
+@media (min-width: 615px){
+    img#logo-topo{
+    margin-left: 20%;
+    padding: 10px;
+    }
+}
+@media (min-width: 540px){
+    img#logo-topo, button#news{
+    margin-left: 4%;
+    margin-right: 2%;
+    padding-left: 10px;
+    padding-right: 10px;
+    }   
+}
+@media (min-width: 460px){
+    img#logo-topo, button#news{
+    margin-left: inherit;
+    margin-right: inherit;
+    padding-left: 9%;
+    padding-right: 10%;
+    }   
+}
+@media (min-width: 320px){
+    img#logo-topo, button#news{
+    margin-left: 5%;
+    margin-right: 6%;
+    }   
+}
+/*fim ajustes menu mobile*/
+hgroup{/*estilo de alinhamento do grupo do cabecalho*/
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+nav{/*estilo responsivo para o menu todo*/
+    display: flex;
+    background-color: #e91e63;
+    padding-left: 25%;
+    margin: 2px 0px;    
+}
+@media (min-width: 1300px){
+    nav{/*estilo responsivo para o menu todo*/
+        display: flex;
+        background-color: #e91e63;
+        padding-left: 30%;
+        margin: 14px 0px;    
+    }
+}
+@media (min-width: 1600px){
+    nav{/*estilo responsivo para o menu todo*/
+        display: flex;
+        background-color: #e91e63;
+        padding-left: 35%;
+        margin: 14px 0px;    
+    }
+}
+@media (min-width: 2048px){
+    nav{/*estilo responsivo para o menu todo*/
+        display: flex;
+        background-color: #e91e63;
+        padding-left: 38%;
+        margin: 14px 0px;    
+    }
+}
+
+@media (min-width: 3072px){
+    nav{/*estilo responsivo para o menu todo*/
+        display: flex;
+        background-color: #e91e63;
+        padding-left: 43%;
+        margin: 14px 0px;    
+    }
+}
+nav a{/*estiliza os links com alinhamento*/
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+nav a:hover{/*muda cor com mouse hover*/
+    background-color: white;
+    color: #333;
+}
+section{/*conteiner de colunas de embrulho*/
+    display: flex;
+    flex-wrap: wrap;
+}
+aside#esq{
+    flex: 30%;
+    background-color: #333;
+    padding: 10px;
+}
+aside#dir{
+    flex: 30%;
+    background-color: #333;
+    padding: 10px;
+}
+article{
+    flex: 70%;
+    background-color: white;
+    padding: 10px;
+}
+figure{
+    max-width:100%;
+    height: auto;
+    background-color: white;
+    padding: 10px;
+}
+footer{
+    text-align: center;
+    padding: 5px;
+    color: white;
+    background-color: #333;
+}
+button#news{
+    font-family: 'fonte-padrao', "sans-serif";
+    color: white;
+}
+p#chamar_acao{
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration-line: underline;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+/* Layout Responsivo - Quando a tela é menor que 768px de largura, faz as duas colunas se empilharem no topo uma da outra ao inves de ficar lado a lado */
+@media (max-width: 768px){
+    section, nav{
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+}

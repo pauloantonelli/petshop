@@ -1,0 +1,29 @@
+.demo-card-wide.mdl-card {/*tamanho do card*/
+    width: 100%;
+  }
+  .demo-card-wide > .mdl-card__title {/*fundo do card*/
+    height: 15em;
+    background: url("../multimidia/meu-amigo-cao-petshop-header.png") center / contain no-repeat;
+  }
+  .demo-card-wide > .mdl-card__menu {/*botao compartilhar*/
+    color: black;
+  }
+.demo-card-wide > .mdl-card__supporting-text{
+    color: #333;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.mdl-button.mdl-button--colored{
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1em;
+}
+
+@media (max-width: min-width: 768px){
+    .demo-card-wide.mdl-card {
+        display: none;
+        }
+    }
