@@ -35,6 +35,7 @@ nav.mdl-navigation{/*muda estilo menu lateral*/
 a.mdl-navigation__link{/*muda estilo menu lateral*/
     font-size: 1.3em;
     margin: 0px;
+    padding: 0px;
 }
 span#menu_lateral_fundo_superior{/*muda estilo menu lateral*/
     background-color: #E91E63;
@@ -143,18 +144,18 @@ hgroup#espaco_topo{/*efeito paralax topo versao pc*/
     height: 250px;
     /*efeito parallax no scrool*/
     background-attachment: fixed;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 nav{/*estilo responsivo para o menu todo*/
     display: flex;
     background-color: #e91e63;
-    padding-left: 20%;
+    padding-left: 0%;
     margin: 0px;    
     font-size: 1.8em;
 }
-@media (min-width: 1024px){
+@media (min-width: 768px){
     nav{/*estilo responsivo para o menu todo*/
         display: flex;
         background-color: #e91e63;
@@ -209,7 +210,7 @@ nav a:hover{/*muda cor com mouse hover*/
     background-color: white;
     color: #333;
 }
-@media (min-width: 768px){
+@media (min-width: 769px){
 p#chamar_acao{
     font-size: 1.3em;
     font-weight: bold;
@@ -218,6 +219,32 @@ p#chamar_acao{
     text-decoration-line: underline;
     margin-top: 10px;
     margin-bottom: 0px;
+    }
+div#paralax-quem-somos{
+    padding: inherit;
+    background-image: url(../multimidia/catchuros/amigos.jpg);
+    height: 250px;
+    /*efeito parallax no scrool*/
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: repeat-x;
+    background-size: contain;
+    }
+div#amigo-peito{
+    padding: inherit;
+    background-image: url(../multimidia/catchuros/amigo-do-peito.jpg);
+    height: 500px;
+    /*efeito parallax no scrool*/
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: repeat;
+    background-size: contain;
+    }
+img#amigo-mobile{
+    display: none;
+    }
+    img#amigo-peito{
+        display: none;
     }
 }
 @media (max-width: 768px){
@@ -229,6 +256,9 @@ p#chamar_acao{/*estilo nome da chamada do usuario para acao*/
     text-decoration-line: underline;
     margin-top: 10px;
     margin-bottom: 0px;
+    }
+    img#amigo-mobile{
+        display: none;
     }
 }
 /* Layout Responsivo - Quando a tela é menor que 768px de largura, faz as duas colunas se empilharem no topo uma da outra ao inves de ficar lado a lado */

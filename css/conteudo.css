@@ -4,17 +4,17 @@
         src: url("fontes/Roboto-regular.ttf");
 }
 .mdl-cell {
-  box-sizing: border-box;
-  height: 200px;
-  padding-left: 8px;
-  padding-top: 4px;
-  color: #e91e63;
+    box-sizing: border-box;
+    height: 200px;
+    padding-left: 8px;
+    padding-top: 4px;
+    color: #e91e63;
     background-color: forestgreen;
 }
 .mdl-grid:first-of-type .mdl-cell {
   height: 150px;
 }
-div.mdl-layout__content h1,h2{
+.mdl-layout__content h1,h2{
     font-size: 1.8em;
     font-weight: bold;
     width: 100%;
@@ -25,36 +25,22 @@ div.mdl-layout__content h1,h2{
     margin-top: 10px;
     margin-bottom: 0px;
 }
-div.mdl-layout__content p{
+.mdl-layout__content p{
     font-size: 1.5em;
     font-weight: 600;
 }
 figure#totos{
     /padding-top: 140px;
     /*efeito parallax no scrool*/
-    background-image: url(../multimidia/bolinha.JPG);
+    background-image: url(../multimidia/questao3.jpg);
     height: 500px;
-    background-attachment: fixed;
-    background-position: center;
+    background-attachment: scroll;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
     
 }
-figcaption{
-    border-bottom: 1px solid;
-}
-ul#menu_racas{
-    list-style: none;
-    text-decoration: none;
-    font-size: 1.4em;
-}
 @media (max-width: 768px){
-main.mdl-layout__content{
-    width: 100%;
-    height: auto;
-    text-align: center;
-    color: #e91e63;
-}
 form{
     margin: 0px;
     padding: 20px;
@@ -79,7 +65,79 @@ form{
     color: white;
     font-size: 1.2em;
 }
-    
+ul#menu_racas{
+    /list-style: none;
+    text-decoration: none;
+    font-size: 1.4em;
+    }
+}
+/*versao pc*/
+@media (min-width: 1900px){
+ul#menu_racas li{
+    text-decoration: none;
+    text-align: left;
+    margin-left: 35%;
+    padding-left: 10%;
+    }
+ul#menu_racas a{
+    list-style: none;
+    text-decoration: none;
+    }
+}
+@media (max-width: 1500px){
+ul#menu_racas li{
+    text-decoration: none;
+    text-align: left;
+    margin-left: 35%;
+    padding-left: 8%;
+    }
+ul#menu_racas a{
+    list-style: none;
+    text-decoration: none;
+    }
+}
+@media (max-width: 1299px){
+ul#menu_racas li{
+    text-decoration: none;
+    text-align: left;
+    margin-left: 35%;
+    padding-left: 5%;
+    }
+ul#menu_racas a{
+    list-style: none;
+    text-decoration: none;
+    }
+}
+/*versao mobile*/
+@media (max-width: 768px){
+ul#menu_racas li{
+    text-decoration: none;
+    text-align: left;
+    margin-left: 35%;
+    padding-left: 5%;
+    }
+ul#menu_racas a{
+    list-style: none;
+    text-decoration: none;
+    }
+}
+@media (max-width: 600px){
+ul#menu_racas li{
+    text-decoration: none;
+    text-align: left;
+    margin-left: 30%;
+    padding-left: 5%;
+    }
+}
+@media (max-width: 414px){
+ul#menu_racas li{
+    text-decoration: none;
+    text-align: left;
+    margin-left: 15%;
+    padding-left: 10%;
+    }
+}
+   
 input#entrada-dados-form{
     margin: 5px 3%;
     padding: 4px;
@@ -107,7 +165,7 @@ button#enviar-form{
     }
 }
 @media (min-width: 1900px){
-    input#entrada-dados-form{
+input#entrada-dados-form{
     margin: 5px 5%;
     padding: 8px;
     width: 90%;
@@ -121,7 +179,6 @@ button#enviar-form{
     width: 15%;
     height: auto;
     }
-}
 }
 
 /*estilo versao mobile*/
@@ -201,6 +258,18 @@ aside#mov_dir{
     font-size: 1.2em;
     }
 }
+figcaption{
+    border-bottom: 1px solid;
+}
+.wiki{
+    padding: 0px 2%;
+}
+main.mdl-layout__content{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: #e91e63;
+}
 figure{
     max-width:100%;
     height: auto;
@@ -216,14 +285,22 @@ footer#rodape-mobile{
     text-align: center;
     color: white;
     background-color: #333;
-}
+    }
+@media (max-width: 250px){
+    footer#rodape-mobile{
+        display: none;
+    }
+    footer#rodape-pc{
+        display: none;
+    }
+    }
 }
 
 /*estilo versao pc*/
 
 @media (min-width: 769px){
 section#conteudo-movel{
-    /display: none;
+    display: none;
 }
 button#news{
     font-size: 1.8em;
@@ -234,12 +311,29 @@ section#conteudo-pc{/*conteiner de colunas de embrulho*/
     /flex-wrap: wrap;
 }
 article{
-    width: 80%;
+    width: 90%;
+    height: auto;
     margin: auto;
-    float: left;
+    float: none;
+    text-align: center;
+    color: #e91e63;
     background-color: white;
     padding: 10px;
 }
+figure.fotos-destaque{
+    background-color: #e91e63;
+}
+figure.fotos-destaque img{
+    margin-top: 1%;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color: #e91e63;
+    }
+figcaption h2{
+    color: white;
+    margin-top: 0px;
+    padding-top: 0px;
+    }
 aside#esq{
     width: 20%;
     margin: auto;
