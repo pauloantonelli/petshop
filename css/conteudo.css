@@ -14,7 +14,7 @@
 .mdl-grid:first-of-type .mdl-cell {
   height: 150px;
 }
-.mdl-layout__content h1,h2{
+.mdl-layout__content h1,h2, p{
     font-size: 1.8em;
     font-weight: bold;
     width: 100%;
@@ -25,9 +25,236 @@
     margin-top: 10px;
     margin-bottom: 0px;
 }
-.mdl-layout__content p{
+div#fundo-btn-enviar{
+    margin-top: -30px;
+    padding-bottom: 10px;    
+    background-color: #E54B4B;
+}
+@media(max-width: 499px){
+    article#tabela-produtos-pc{
+    display: block;
+    width: 98%;
+    /float: none;
+    margin: auto;
+    }
+    table#tabela-produtos{
+    display: block;
+    padding: 1px;
+    float: left;
+    margin: auto;
+    /background-color: #e91e63;
+    }
+    section#conteudo-movel h1{
+        text-align: center;
+        color: #e91e63;
+        font-weight: bold;
+        margin-bottom: 0px;
+    }
+    form#dono h3, label, input{
+        text-align: center;
+        width: 100%;
+    }
+    form#agenda h3, h4{
+        text-align: center;
+    }
+    div#preferencia-horario{
+        text-align: center;
+    }
+    .porte{
+        display: block;
+        float: left;
+        width: 10%;
+    }
+    textarea#area-texto{
+        width: 100%;
+        padding-top: 3%;
+    }
+    button#btn-enviar-mobile{
+        display: block;
+        margin-left: 40%;
+        /margin-right: 5%;
+        margin-top: 2%;
+    }
+}
+@media (min-height: 500px){
+    article#tabela-produtos-pc{
+    display: block;
+    width: 100%;
+    float: left;
+    margin: auto;
+    }
+    table#tabela-produtos{
+    display: block;
+    padding: 10px;
+    float: right;
+    margin: 10px;
+    /background-color: #e91e63;
+    }
+    section#conteudo-movel h1{
+        text-align: center;
+        color: #e91e63;
+        font-weight: bold;
+        margin-bottom: 0px;
+    }
+    form#dono h3, label, input{
+        text-align: center;
+        width: 100%;
+    }
+    form#agenda h3, h4{
+        text-align: center;
+    }
+    div#preferencia-horario{
+        text-align: center;
+    }
+    .porte{
+        display: block;
+        float: left;
+        width: 10%;
+    }
+    textarea#area-texto{
+        width: 100%;
+        padding-top: 3%;
+    }
+}
+@media (min-width: 769px){
+    article#tabela-produtos-pc{
+    display: block;
+    width: 100%;
+    float: left;
+    margin: auto;
+    }
+    table#tabela-produtos{
+    display: block;
+    padding: 0px;
+    float: left;
+    margin: 5px;
+    /background-color: #e91e63;
+    }
+    section#conteudo-corpo h1{
+        text-align: center;
+        color: #e91e63;
+        font-weight: bold;
+        margin-bottom: 0px;
+    }
+    .titulos{
+        font-weight: bold;
+        font-size: 1.4em;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    form#dono label, input{
+        text-align: center;
+        width: 100%;
+        font-size: 1em;
+    }
+    form#agenda h3, h4{
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    div#preferencia-horario{
+        text-align: center;
+    }
+    .porte{
+        display: block;
+        float: left;
+        width: 10%;
+    }
+    #texto-agenda{
+        width: 100%;
+        text-align: center;
+        color: #e91e63;
+        background-color: white;
+    }
+    input#data-agenda-1{
+        color: #e91e63;
+        text-align: center;
+        background-color: white;
+    }
+    button#btn-enviar{
+        display: block;
+        margin-left: 45%;
+        margin-top: 2%;
+    }
+}
+@media (min-height: 1600px){
+    button#btn-enviar{
+        display: block;
+        margin-left: 47%;
+        margin-top: 2%;
+    }
+}
+.titulo-produtos h1{
+    font-size: 1.5em;
+}
+.titulo-produtos h2{
+    font-size: 1.3em;
+}
+table#tabela-produtos th{
+    text-align: center;
+    font-size: 1.3em;
+    color: #e91e63;
+}
+@media (max-width: 414px){
+/.thumb-racoes{
+    display: flex;
+    /width: 100%;
+    float: none;
+    padding-right: 15%;
+    padding-left: 37%;
+    }
+}
+@media (min-width: 500px){
+/.thumb-racoes{
+    display: block;
+    float: none;
+    padding-right: 5%;
+    padding-left: 40%;
+    }
+}
+@media (max-width: 768px){/*marcacao mobile*/
+.thumb-racoes{
+    display: flex;
+    flex-flow: wrap;
+    float: none;
+    padding-right: 5%;
+    padding-left: 5%;
+    }
+    input#data-agenda-1{
+        color: #e91e63;
+        text-align: center;
+        background-color: white;
+    }
+    .titulos{
+        font-weight: bold;
+        font-size: 1.3em;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    #obs-text-area{
+        text-align: center;
+    }
+    #texto-agenda{
+        width: 100%;
+        text-align: center;
+        color: #e91e63;
+        background-color: white;
+    }
+    #nome-animal{
+        width: 100%;
+        text-align: center;
+        color: #e91e63;
+        /background-color: white;
+    }
+}
+.mdl-layout__content p{/*afeta todos os paragrafos*/
     font-size: 1.5em;
     font-weight: 600;
+}
+p#obrigado{
+    display: block;
+    width: 100%;
+    float: right;
 }
 figure#totos{
     /padding-top: 140px;
@@ -56,6 +283,48 @@ input#entrada-dados-form{
 button#enviar-form{
     margin-top: 4%;
 }
+    div#foto-1{
+        width: 100%;
+        background-image: url(../multimidia/catchuros/brincadeiras.jpg);
+        height: 500px;
+        background-attachment: scroll;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    div#foto-1 h2{
+        width: 100%;
+        color: white;
+        background-color: #e91e63;
+    }
+    div#foto-2{
+        width: 100%;
+        background-image: url(../multimidia/catchuros/cuidados.jpg);
+        height: 500px;
+        background-attachment: scroll;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    div#foto-2 h2{
+        width: 100%;
+        color: white;
+        background-color: #e91e63;
+    }
+    div#foto-3{
+        width: 100%;
+        background-image: url(../multimidia/catchuros/saude.jpg);
+        height: 500px;
+        background-attachment: scroll;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    div#foto-3 h2{
+        width: 100%;
+        color: white;
+        background-color: #e91e63;
+    }
 }
 @media (min-width: 769px){
 form{
@@ -65,10 +334,61 @@ form{
     color: white;
     font-size: 1.2em;
 }
+    #nome-animal{
+        width: 100%;
+        text-align: center;
+        color: #e91e63;
+        /background-color: white;
+    }
+    .opcao-label{
+        text-align: center;
+        width: 100%;
+        color: white;
+        font-size: 1.5em;
+    }
 ul#menu_racas{
     /list-style: none;
     text-decoration: none;
     font-size: 1.4em;
+    }
+    div#foto-1{
+        background-image: url(../multimidia/catchuros/brincadeiras.jpg);
+        height: 500px;
+        background-attachment: fixed;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    div#foto-1 h2{
+        width: 100%;
+        color: white;
+        background-color: #e91e63;
+    }
+    div#foto-2{
+        background-image: url(../multimidia/catchuros/cuidados.jpg);
+        height: 500px;
+        background-attachment: fixed;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    div#foto-2 h2{
+        width: 100%;
+        color: white;
+        background-color: #e91e63;
+    }
+    div#foto-3{
+        background-image: url(../multimidia/catchuros/saude.jpg);
+        height: 500px;
+        background-attachment: fixed;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    div#foto-3 h2{
+        width: 100%;
+        color: white;
+        background-color: #e91e63;
     }
 }
 /*versao pc*/
@@ -183,7 +503,7 @@ button#enviar-form{
 
 /*estilo versao mobile*/
 @media (max-width: 768px){
-section#conteudo-pc{
+section#menu-pc, section#conteudo-pc{
     display: none;
 }
 section#conteudo-movel{/*conteiner de colunas de embrulho*/
@@ -211,50 +531,95 @@ aside#mov_esq{
     margin: auto;
     float: left;
     background-color: #e91e63;
-    padding: 2% 0px 2% 15%;
+    /padding: 2% 0px 2% 15%;
     font-size: 1.2em;
 }
-aside#mov_dir{
+    aside#mov_esq img{
     width: 100%;
     margin: auto;
-    float: right;
+    float: left;
     background-color: #e91e63;
-    padding: 2% 0px 2% 15%;
+    /padding: 2% 0px 2% 15%;
     font-size: 1.2em;
 }
+    aside#mov_esq p{
+    color: white;
+        text-align: center;
+    font-size: 1.3em;
+    }
+    @media (min-width: 320px) and (max-width: 360px){
+       article#tabela-produtos-mobile{
+    display: flex;
+        flex-flow: wrap;
+    float: none;
+    margin: auto;
+    }
+    table#tabela-produtos-mobile{
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    margin: 5px auto;
+    /background-color: #e91e63;
+    } 
+    }
 @media (min-width: 360px){
+    article#tabela-produtos-mobile{
+    display: flex;
+        flex-flow: wrap;
+    float: none;
+    margin: auto;
+    }
+    table#tabela-produtos-mobile{
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    margin: 5px auto;
+    /background-color: #e91e63;
+    }
+section#conteudo-corpo-mobile h1{
+        text-align: center;
+        color: #e91e63;
+        font-weight: bold;
+        margin-bottom: 0px;
+    }
     aside#mov_esq{
     width: 100%;
     margin: auto;
     float: left;
     background-color: #e91e63;
-    padding: 2% 0px 2% 20%;
-    font-size: 1.2em;
+    font-size: 1.3em;
     }
-aside#mov_dir{
+aside#mov_esq img{
     width: 100%;
-    margin: auto;
-    float: right;
     background-color: #e91e63;
-    padding: 2% 0px 2% 20%;
+    font-size: 1.2em;
+}
+    aside#mov_esq p{
+    color: white;
+        text-align: center;
     font-size: 1.2em;
     }
 }
 @media (min-width: 768px){
     aside#mov_esq{
-    width: 50%;
+    width: 100%;
     margin: auto;
     float: left;
     background-color: #e91e63;
-    padding: 2% 0px 2% 10%;
     font-size: 1.2em;
     }
-aside#mov_dir{
-    width: 50%;
-    margin: auto;
-    float: right;
+aside#mov_esq img{
+    width: 40%;
+    margin-left: 30%;
     background-color: #e91e63;
-    padding: 2% 0px 2% 10%;
+    font-size: 1.2em;
+    }
+    aside#mov_esq p{
+    width: 50%;
+    color: white;
+    margin-left: 30%;
+    /display: none;
+    text-align: center;
     font-size: 1.2em;
     }
 }
@@ -307,13 +672,15 @@ button#news{
     color: white;
 }
 section#conteudo-pc{/*conteiner de colunas de embrulho*/
-    display: block;
-    /flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    float: none;
+    overflow: hidden;
 }
 article{
-    width: 90%;
+    width: 80%;
     height: auto;
-    margin: auto;
+    /margin: auto;
     float: none;
     text-align: center;
     color: #e91e63;
@@ -335,22 +702,24 @@ figcaption h2{
     padding-top: 0px;
     }
 aside#esq{
-    width: 20%;
-    margin: auto;
-    margin-top: 30px;
-    float: right;
+    width: 30%;
+    height: auto;
+    text-align: center;
+    margin: 0px 2px;
+    padding: 5px 2px;
     background-color: #e91e63;
-    padding: 2% 0px 2% 4%;
     font-size: 1.2em;
-}
-aside#dir{
-    width: 20%;
-    margin: auto;
-    float: right;
-    background-color: #e91e63;
-    padding: 2% 0px 2% 4%;
-    font-size: 1.2em;
-}
+    /*pet surpresa*/
+    background-image: url('../multimidia/pet-surpresa.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 150px;
+    }
+    aside#esq p{
+        font-weight: bold;
+        font-size: 1.2em;
+        color: white;
+    }
 p#obrigado{
     font-size: 2em;
     font-weight: bold;

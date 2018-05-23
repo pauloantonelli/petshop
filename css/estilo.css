@@ -9,6 +9,11 @@
 body{/*estilo de alinhamento do corpo*/
     margin: -20px 0px;
 }
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
 /*cor menu mobile*/
 header.mdl-layout__header{
     /background-color: firebrick;/*muda a cor da barra*/
@@ -243,8 +248,14 @@ div#amigo-peito{
 img#amigo-mobile{
     display: none;
     }
-    img#amigo-peito{
+img#amigo-peito{
         display: none;
+    }
+img#pet-obrigado{
+    display: block;
+    float: left;
+    margin-top: 4%;
+    margin-left: 25%;
     }
 }
 @media (max-width: 768px){
