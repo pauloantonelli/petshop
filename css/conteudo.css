@@ -535,16 +535,24 @@ aside#mov_esq{
     font-size: 1.2em;
 }
     aside#mov_esq img{
-    width: 100%;
-    margin: auto;
-    float: left;
+    width: 50%;
+    float: none;
     background-color: #e91e63;
-    /padding: 2% 0px 2% 15%;
+    margin-right: 100%;
+    padding: 2%;
     font-size: 1.2em;
 }
+    #video-home-mobile{
+        width: 93%;
+        margin: auto;
+    }
+    #audio-home-mobile{
+        width: 93%;
+        margin: auto;
+    }
     aside#mov_esq p{
     color: white;
-        text-align: center;
+    text-align: center;
     font-size: 1.3em;
     }
     @media (min-width: 320px) and (max-width: 360px){
@@ -560,8 +568,16 @@ aside#mov_esq{
     padding: 5px;
     margin: 5px auto;
     /background-color: #e91e63;
-    } 
     }
+    aside#mov_esq img{
+    width: 100%;
+    float: none;
+    background-color: #e91e63;
+    margin: auto;
+    padding: 2%;
+    font-size: 1.2em;
+    }
+}
 @media (min-width: 360px){
     article#tabela-produtos-mobile{
     display: flex;
@@ -678,7 +694,7 @@ section#conteudo-pc{/*conteiner de colunas de embrulho*/
     overflow: hidden;
 }
 article{
-    width: 80%;
+    width: 100%;
     height: auto;
     /margin: auto;
     float: none;
@@ -719,6 +735,22 @@ aside#esq{
         font-weight: bold;
         font-size: 1.2em;
         color: white;
+    }
+    aside#esq img{
+    width: 100%;
+    float: none;
+    background-color: #e91e63;
+    margin: auto;
+    padding: 2%;
+    font-size: 1.2em;
+    }
+    #video-home{
+        width: 95%;
+        margin: auto;
+    }
+    #audio-home{
+        width: 95%;
+        margin: auto;
     }
 p#obrigado{
     font-size: 2em;
