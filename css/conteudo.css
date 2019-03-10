@@ -1,6 +1,6 @@
 @charset "utf-8"
     @font-face{
-        font-family: 'fonte-padrao'; "sans-serif";
+        font-family: 'fonte-padrao', "sans-serif";
         src: url("fontes/Roboto-regular.ttf");
 }
 .mdl-cell {

@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/material/material.min.css" />
   <link rel="stylesheet" href="css/conteudo.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="manifest" href="manifest.json">
   <title>Banho e Tosa</title>
 </head>
 
@@ -152,6 +153,7 @@
             <input type="checkbox" name="agendamento" value="sexta" />Sexta-feira
             <input type="checkbox" name="agendamento" value="sabado" />Sábado
             <br>
+            <label id="hoje">Hoje </label><br>
             <br>
             <label>Primeira opção de horário: </label><br>
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
@@ -169,7 +171,7 @@
           </form>
             <div id="fundo-btn-enviar">
             <a href="obrigado.html">
-                <button id="btn-enviar-mobile" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Enviar</button>
+                <button onclick="enviarForm();" id="btn-enviar-mobile" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Enviar</button>
             </a>
             </div>
         </section>
@@ -315,7 +317,7 @@
     </form>
       <div id="fundo-btn-enviar">
             <a href="obrigado.html">
-                <button id="btn-enviar" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Enviar</button>
+                <button onclick="enviarForm()" id="btn-enviar" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Enviar</button>
             </a>
             </div>
   </section>
@@ -324,5 +326,5 @@
     <a href="mailto:atendimento@meuamigocaopetshop.com"> atendimento@meuamigocaopetshop.com</a> - (0XX) 99999-9999 / (0XX) 88888-8888</footer>
 </body>
 <script src="js/material/material.min.js"></script>
-
+<script src="js/funcoes.js"></script>
 </html>

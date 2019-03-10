@@ -1,0 +1,26 @@
+{
+  "short_name": "pet senac",
+  "name": "pet shop senac taboão",
+  "icons": [
+    {
+        "src": "multimidia/icones/icone-144.png",
+        "type": "image/png",
+        "sizes": "144x144"
+    },
+    {
+      "src": "multimidia/icones/icone-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "multimidia/icones/icone-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/quem-somos.html",
+  "background_color": "#e91e63",
+  "display": "standalone",
+  "scope": "/index.html/",
+  "theme_color": "#E54B4B"
+}
